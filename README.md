@@ -4,7 +4,7 @@ An interactive, zero-latency traffic light controller implemented on a **PIC18F4
 
 ---
 
-##  Project Design & Logic
+## 💡 Project Design & Logic
 
 In municipal traffic controllers, registering pedestrian walk requests requires an instant reaction. Traditional "polling" methods can cause noticeable lag or miss button presses entirely if the processor is occupied executing long delay loops for the vehicle signals. 
 
@@ -24,7 +24,7 @@ This project solves that issue by utilizing **External Hardware Interrupts (`INT
 
 ---
 
-##  Connection Guide
+## ⚡ Connection Guide
 ![image alt](https://github.com/annabiju26-alt/Pedestrian-Crossing-Traffic-Controller/blob/86cde88ab587430516db63aa90735beeba976511/pedestrian.png)
 
 Follow this layout schema to wire the traffic lights and the pedestrian switch on a breadboard or simulation environment:
@@ -41,7 +41,7 @@ Follow this layout schema to wire the traffic lights and the pedestrian switch o
 
 ---
 
-##  Project Code (XC8 C Source)
+## 💻 Project Code (XC8 C Source)
 
 This program implements the structured, modular pedestrian controller separating interrupt flag detection from main state logic. Save this code as `main.c`:
 
